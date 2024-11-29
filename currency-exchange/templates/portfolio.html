@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('static/assets/images/GettyImages-520187152-9dad65ce2ea04ac09701efa9618873b0.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 100px auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        main h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .portfolio-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 15px 0;
+        }
+
+        .portfolio-item:last-child {
+            border-bottom: none;
+        }
+
+        .portfolio-item h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .portfolio-item p {
+            margin: 5px 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/input">Currency Converter</a>
+            <a href="/portfolio">Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Portfolio</h2>
+        <div class="portfolio-item">
+            <h3>Conversion #1</h3>
+            <p><strong>Base Currency:</strong> USD</p>
+            <p><strong>Target Currency:</strong> EUR</p>
+            <p><strong>Amount:</strong> 100</p>
+            <p><strong>Converted Amount:</strong> 92.5 EUR</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Conversion #2</h3>
+            <p><strong>Base Currency:</strong> GBP</p>
+            <p><strong>Target Currency:</strong> INR</p>
+            <p><strong>Amount:</strong> 50</p>
+            <p><strong>Converted Amount:</strong> 4800 INR</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Conversion #3</h3>
+            <p><strong>Base Currency:</strong> CAD</p>
+            <p><strong>Target Currency:</strong> JPY</p>
+            <p><strong>Amount:</strong> 200</p>
+            <p><strong>Converted Amount:</strong> 22000 JPY</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Currency Connect</p>
+    </footer>
+</body>
+</html>
